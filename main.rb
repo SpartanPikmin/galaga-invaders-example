@@ -54,9 +54,17 @@ GalagaInvaders.new.show
 =begin
 Reflecting on Principle
 -----------------------
-1. True or False: Good OO design eliminates dependencies.
+1. True or False: Good OO design eliminates dependencies. 
+  A: false, you want to reduce dependency 
 2. Briefly list four ways in which a class that collaborates with another class
    is dependent on it. (For example, one dependency is knowing the other class name.)
+   A:
+   1. names of another class
+   2. name of a message that is intended to be sent to another class other than self
+   3. argument message requirments
+   4. order of arguments 
 3. What are two primary factors to consider when assessing the risk of a dependency?
+    Dependents, Requirments changes
 4. What is Metz's rule of thumb for choosing a dependency direction?
+    how offten does/will the class/object change, and how dependent are the objects to one another.
 =end
