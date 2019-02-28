@@ -19,13 +19,12 @@ class MissileCollection
   end
 
   def add_from(ship_or_alien)
-    if ship_or_alien.is_a? Ship
-      missile = Missile.new(ship_or_alien.muzzle_location)
-      missile.launch(-10)
-    elsif ship_or_alien.is_a? Alien
-      missile = Missile.new(Vector.new(ship_or_alien.location.x, ship_or_alien.bottom_edge))
-      missile.launch(10)
-    end
+    #needs duck typing so I changed alien to also have a muzzle_location method.
+    #Also added a velocity method to both classes.
+    #name prabaly needs to change but it should work.
+    
+    missile = Missile.new(ship_or_alien.muzzle_location)
+    missile.launch(ship_or_alien.velocity)
     add(missile)
   end
 

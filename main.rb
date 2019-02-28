@@ -57,8 +57,14 @@ GalagaInvaders.new.show
 Reflecting on Principle
 -----------------------
 1. What is "duck typing" and what does it have to do with polymorphism?
+  A: it is a form of polymorphism that. Create a cross class interface with the objects it
+  interacts with.
 2. What are some common code smells that indicate the need for relying on a
    "duck type" rather than a concrete class?
+   A: using a switch, kind_of?, and resopnds_to? inorder to check for what kind 
+   of obj the method got.
 3. True or False: Abstractions like duck typing make code explicitly easier to
    understand, vs. using concrete types.
+   A: False, I feel that if you are not familier with the idea of duck typing,
+   it can cause confusion as to what your code is doing to a third party.
 =end

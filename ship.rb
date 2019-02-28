@@ -25,6 +25,10 @@ class Ship
     move(DEFAULT_VELOCITY)
   end
 
+  def velocity
+    10
+  end
+
   def draw
     puts self
   end
