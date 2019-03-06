@@ -1,7 +1,6 @@
-class Fort < Structure
+class Fort < Structure include Sprite_Setting Hitting_Control Damage_Control
 
-  def initialize(args)
-    super
+  def post_initialize(args)
     @sprite = args.fetch[:sprite]
   end
 
